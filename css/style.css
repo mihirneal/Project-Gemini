@@ -48,14 +48,133 @@ h1 {
 navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover {
 	color: #0080ff;
+	transition: color 0.5s;
 }
 
 .navbar-default .navbar-toggle {
 	border-color: white;
 }
 
+.navbar-default .navbar-toggle:hover {
+	border-color: white;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
 	background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: #0080ff;
+	transition: background-color 0.5s;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+	font-size: 50px;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+	color: #0080ff;
+	transition: color 0.5s;
+}
+
+.heading {
+	animation-iteration-count: 1;
+	animation-duration: 2s;
+}
+
+.line-one {
+	display: flex;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 75px;
+}
+
+.line-one div {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.line-one > div {
+	flex: 1;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 250%;
+}
+
+.line-two {
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#adj-one {
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-duration: 3s;
+	color: white;
+}
+
+#adj-two {
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+	animation-duration: 3s;
+	color: white;
+}
+
+#adj-three {
+	animation-delay: 3s;
+	animation-iteration-count: 1;
+	animation-duration: 3s;
+	color: white;
+}
+
+#and {
+	color: white;
+	animation-delay: 4s;
+	animation-iteration-count: 1;
+	animation-duration: 3s;
+}
+
+#special {
+	margin-top: 40px;
+	color: white;
+	animation-delay: 5s;
+	animation-iteration-count: 1;
+	animation-duration: 3s;
+}
+
+#adj-one:hover {
+	color: #0080ff;
+	transition: color 0.5s;
+}
+
+#adj-two:hover {
+	color: #0080ff;
+	transition: color 0.5s;
+}
+
+#adj-three:hover {
+	color: #0080ff;
+	transition: color 0.5s;
+}
+
+#and:hover {
+	color: #0080ff;
+	transition: color 0.5s;
+}
+
+#special:hover {
+	color: #0080ff;
+	transition: color 0.5s;
+}
+
+#mars {
+	color: #f3714d;
 }
 
 @keyframes animate {
@@ -68,14 +187,4 @@ navbar-default .navbar-nav > li > a:focus,
 	100% {
 		background-position: 0 100;
 	}
-}
-
-.navbar-default .navbar-brand {
-	color: white;
-	font-size: 50px;
-}
-
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:hover {
-	color: #0080ff;
 }
