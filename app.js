@@ -20,6 +20,11 @@ app.get('/journal', function(req, res) {
 	res.render('journal');
 });
 
+app.get('/journal/:id/:title', function(req, res) {
+	var id = req.params.id;
+	res.render('Article' + id);
+});
+
 app.get('*', function(req, res) {
 	res.render('pageDoesNotExist');
 });
