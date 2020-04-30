@@ -39,7 +39,7 @@ h1 {
 	background-color: black;
 	color: white;
 	width: 23.33%;
-	height: 381px;
+	height: auto;
 	margin: 5%;
 	float: left;
 	border-radius: 50px;
@@ -66,6 +66,7 @@ h1 {
 	margin-left: 20px;
 	font-size: 150%;
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .navigation {
