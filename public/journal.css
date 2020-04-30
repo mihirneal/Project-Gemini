@@ -1,0 +1,159 @@
+body {
+	background-image: url("resources/Earth final.png");
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+}
+
+h1 {
+	margin: 0 auto;
+	margin-top: 75px;
+	text-align: center;
+	font-size: 700%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	letter-spacing: 2px;
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(
+		92deg,
+		rgb(243, 38, 38),
+		rgb(243, 243, 38),
+		rgb(38, 243, 38),
+		rgb(38, 243, 243),
+		rgb(38, 38, 243),
+		rgb(243, 38, 243),
+		rgb(243, 38, 38)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	animation: animate 60s linear infinite;
+	background-size: 1000%;
+}
+
+.articleContainer {
+	margin-top: 40px;
+}
+
+.art {
+	background-color: black;
+	color: white;
+	width: 23.33%;
+	height: auto;
+	margin: 5%;
+	float: left;
+	border-radius: 50px;
+}
+
+.art img {
+	width: 100%;
+	height: auto;
+	border-radius: 50px;
+}
+
+.art h4 {
+	color: white;
+	font-size: 80%;
+	text-align: right;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.art h2 {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 150%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.navigation {
+	color: #f2f3f5;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+	margin-top: 20px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #f2f3f5;
+	font-size: 20px;
+}
+
+navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+	color: #0080ff;
+	transition: color 0.5s;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #f2f3f5;
+}
+
+.navbar-default .navbar-toggle:hover {
+	border-color: #f2f3f5;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #f2f3f5;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: #0080ff;
+	transition: background-color 0.5s;
+}
+
+.navbar-default .navbar-brand {
+	color: #f2f3f5;
+	font-size: 50px;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+	color: #0080ff;
+	transition: color 0.5s;
+}
+
+.heading {
+	animation-iteration-count: 1;
+	animation-duration: 2s;
+}
+
+#nav-btn:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #0080ff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+#nav-btn:hover:after {
+	width: 100%;
+	left: 0;
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 100;
+	}
+	50% {
+		background-position: 100% 0;
+	}
+	100% {
+		background-position: 0 100;
+	}
+}

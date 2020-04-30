@@ -1,0 +1,84 @@
+body {
+	background-image: url("resources/Earth final.png");
+	background-attachment: fixed;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	letter-spacing: 0.5px;
+}
+
+.navigation {
+	color: #f2f3f5;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+	margin-top: 20px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #f2f3f5;
+	font-size: 20px;
+}
+
+navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+	color: #0080ff;
+	transition: color 0.5s;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #f2f3f5;
+}
+
+.navbar-default .navbar-toggle:hover {
+	border-color: #f2f3f5;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #f2f3f5;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: #0080ff;
+	transition: background-color 0.5s;
+}
+
+.navbar-default .navbar-brand {
+	color: #f2f3f5;
+	font-size: 50px;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+	color: #0080ff;
+	transition: color 0.5s;
+}
+
+.heading {
+	animation-iteration-count: 1;
+	animation-duration: 2s;
+}
+
+#nav-btn:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: #0080ff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+#nav-btn:hover:after {
+	width: 100%;
+	left: 0;
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
+}
