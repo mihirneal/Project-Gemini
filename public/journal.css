@@ -31,6 +31,43 @@ h1 {
 	background-size: 1000%;
 }
 
+.articleContainer {
+	margin-top: 40px;
+}
+
+.art {
+	background-color: black;
+	color: white;
+	width: 23.33%;
+	height: 381px;
+	margin: 5%;
+	float: left;
+	border-radius: 50px;
+}
+
+.art img {
+	width: 100%;
+	height: auto;
+	border-radius: 50px;
+}
+
+.art h4 {
+	color: white;
+	font-size: 80%;
+	text-align: right;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.art h2 {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 20px;
+	margin-left: 20px;
+	font-size: 150%;
+	text-align: center;
+}
+
 .navigation {
 	color: #f2f3f5;
 }
