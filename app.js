@@ -29,6 +29,6 @@ app.get('*', function(req, res) {
 	res.render('pageDoesNotExist');
 });
 
-app.listen(3000, function() {
+app.listen(80, function() {
 	console.log('Server Initiated');
 });
