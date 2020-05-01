@@ -17,7 +17,7 @@
 	margin: 0;
 	color: white;
 	font-family: 'Lora', serif;
-	font-size: 400%;
+	font-size: 5vw;
 	font-weight: 500;
 	margin-bottom: 40px;
 }
@@ -30,16 +30,16 @@
 
 .base h3 {
 	font-family: 'Lora', serif;
-	font-size: 100%;
+	font-size: 1vw;
 	color: #a7a7a7;
 	font-weight: 400;
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-left: 20px;
 }
 
 .base h4 {
 	font-family: 'Lora', serif;
-	font-size: 100%;
+	font-size: 1.5vw;
 	font-weight: 400;
 	margin-bottom: 60px;
 }
@@ -47,14 +47,14 @@
 .base h2 {
 	font-family: 'Lora', serif;
 	font-weight: 500;
-	font-size: 125%;
+	font-size: 1.5vw;
 	margin-top: 40px;
 }
 
 .base p {
 	font-family: "Times New Roman", "georgia", serif;
 	font-weight: 300;
-	font-size: 145%;
+	font-size: 1.5vw;
 	margin: 30px 0;
 }
 

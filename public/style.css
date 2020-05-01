@@ -9,7 +9,7 @@ h1 {
 	margin: 0 auto;
 	margin-top: 75px;
 	text-align: center;
-	font-size: 700%;
+	font-size: 7.5vw;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	letter-spacing: 2px;
@@ -86,25 +86,16 @@ navbar-default .navbar-nav > li > a:focus,
 	animation-duration: 2s;
 }
 
-.line-one {
-	display: flex;
+.span_1_of_3 {
+	width: 32.2%;
+	height: auto;
 	text-align: center;
-	margin: 0 auto;
-	margin-top: 100px;
+	margin-bottom: 2%;
 }
 
-.line-one div {
-	margin-right: 10px;
-	margin-left: 10px;
-}
-
-.line-one > div {
-	flex: 1;
-}
-
-h3 {
+h2 {
 	font-weight: 300;
-	font-size: 250%;
+	font-size: 2.75vw;
 }
 
 .line-two {
@@ -135,6 +126,9 @@ h3 {
 }
 
 #and {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
 	color: #f2f3f5;
 	animation-delay: 4s;
 	animation-iteration-count: 1;
@@ -142,7 +136,7 @@ h3 {
 }
 
 #special {
-	margin-top: 40px;
+	margin-top: 10%;
 	color: #f2f3f5;
 	animation-delay: 5s;
 	animation-iteration-count: 1;
