@@ -14,7 +14,6 @@
 }
 
 #cntr img {
-	border-radius: 50px;
 	width: 100%;
 	height: auto;
 }
@@ -45,7 +44,7 @@
 #cntr p {
 	font-family: "Times New Roman", "georgia", serif;
 	font-weight: 300;
-	font-size: 4.5vmin;
+	font-size: 4vmin;
 	margin: 30px 0;
 }
 

@@ -90,13 +90,13 @@ navbar-default .navbar-nav > li > a:focus,
 }
 
 .jumbotron h1 {
-	font-size: 9.0vw;
+	font-size: 12vmin;
 	margin-top: 25px;
 }
 
 h2 {
 	font-weight: 300;
-	font-size: 1.8vw;
+	font-size: 5vmin;
 	text-align: center;
 }
 
