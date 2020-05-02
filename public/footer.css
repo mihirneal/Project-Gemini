@@ -1,6 +1,5 @@
 body {
-	background-image: url("resources/Earth final.png");
-	background-attachment: fixed;
+	background-color: black;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	letter-spacing: 0.5px;
@@ -11,7 +10,7 @@ body {
 }
 
 .art {
-	background-color: black;
+	background-color: rgb(43, 43, 43);
 	color: white;
 	width: 23.33%;
 	height: 381px;

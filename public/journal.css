@@ -1,5 +1,6 @@
 body {
 	background-image: url("resources/Earth final.png");
+	background-attachment: fixed;
 	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	letter-spacing: 0.5px;
@@ -9,7 +10,6 @@ h1 {
 	margin: 0 auto;
 	margin-top: 75px;
 	text-align: center;
-	font-size: 10vw;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	letter-spacing: 2px;
@@ -32,33 +32,46 @@ h1 {
 	margin-bottom: 150px;
 }
 
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0 10px;
-	color: white;
+.jumbotron {
+	background-color: transparent;
 }
 
-.span_1_of_3 {
-	width: 32.2%;
-	height: auto;
-	background-color: rgba(0, 0, 0, 0.212);
-	border-radius: 50px;
+.jumbotron h1 {
+	/* font-size: 9.0vw; */
+	font-size: 12vmin;
+	margin-top: 25px;
+	margin-bottom: 50px;
 }
 
 h2 {
-	font-size: 2.5vw;
+	font-size: 25px;
 	text-align: center;
+	margin-bottom: 50px;
 }
 
-.span_1_of_3 img {
+h2:hover {
+	color: #0080ff;
+	transition: color 0.5s;
+}
+
+div img {
 	width: 100%;
 	height: auto;
-	border-radius: 50px;
+	border-radius: 10%;
+}
+
+div img:hover {
+	background-color: rgba(255, 255, 255, 0.404);
 }
 
 a {
 	color: white;
+}
+
+a:hover {
+	color: #0080ff;
+	text-decoration: none;
+	transition: color 0.5s;
 }
 
 /* .art {

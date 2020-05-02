@@ -9,7 +9,6 @@ h1 {
 	margin: 0 auto;
 	margin-top: 75px;
 	text-align: center;
-	font-size: 7.5vw;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	letter-spacing: 2px;
@@ -86,16 +85,19 @@ navbar-default .navbar-nav > li > a:focus,
 	animation-duration: 2s;
 }
 
-.span_1_of_3 {
-	width: 32.2%;
-	height: auto;
-	text-align: center;
-	margin-bottom: 2%;
+.jumbotron {
+	background: transparent;
+}
+
+.jumbotron h1 {
+	font-size: 9.0vw;
+	margin-top: 25px;
 }
 
 h2 {
 	font-weight: 300;
-	font-size: 2.75vw;
+	font-size: 1.8vw;
+	text-align: center;
 }
 
 .line-two {
@@ -104,25 +106,22 @@ h2 {
 	margin-top: 30px;
 }
 
-#adj-one {
-	animation-delay: 1s;
+.adj {
 	animation-iteration-count: 1;
 	animation-duration: 3s;
 	color: #f2f3f5;
+}
+
+#adj-one {
+	animation-delay: 1s;
 }
 
 #adj-two {
 	animation-delay: 2s;
-	animation-iteration-count: 1;
-	animation-duration: 3s;
-	color: #f2f3f5;
 }
 
 #adj-three {
 	animation-delay: 3s;
-	animation-iteration-count: 1;
-	animation-duration: 3s;
-	color: #f2f3f5;
 }
 
 #and {
@@ -136,7 +135,7 @@ h2 {
 }
 
 #special {
-	margin-top: 10%;
+	margin-top: 1%;
 	color: #f2f3f5;
 	animation-delay: 5s;
 	animation-iteration-count: 1;
