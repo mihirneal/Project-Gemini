@@ -20,7 +20,7 @@
 
 #cntr h3 {
 	font-family: 'Lora', serif;
-	font-size: 2.5vmin;
+	font-size: 1.25rem;
 	color: #a7a7a7;
 	font-weight: 400;
 	margin-top: 10px;
@@ -29,7 +29,7 @@
 
 #cntr h4 {
 	font-family: 'Lora', serif;
-	font-size: 2.25vmin;
+	font-size: 1.5rem;
 	font-weight: 400;
 	margin-bottom: 60px;
 }
@@ -37,14 +37,15 @@
 #cntr h2 {
 	font-family: 'Lora', serif;
 	font-weight: 500;
-	font-size: 3vmin;
+	font-size: 1.5rem;
 	margin-top: 40px;
 }
 
 #cntr p {
 	font-family: "Times New Roman", "georgia", serif;
 	font-weight: 300;
-	font-size: 4vmin;
+	font-size: 2.25rem;
+
 	margin: 30px 0;
 }
 
