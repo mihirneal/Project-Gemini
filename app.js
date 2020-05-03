@@ -1,14 +1,32 @@
-var express = require('express');
-var mongoose = require('mongoose');
-var app = express();
+var express = require('express'),
+	mongoose = require('mongoose'),
+	passport = require('passport'),
+	bodyParser = require('body-parser'),
+	LocalStrategy = require('passport-local'),
+	passportLocalMongoose = require('passport-local-mongoose'),
+	User = require('./models/user');
 
-mongoose.connect('mongodb://localhost/journal1', {
+mongoose.connect('mongodb://localhost/journal', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 });
-
+var app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(
+	require('express-session')({
+		secret: 'NASA and SpaceX',
+		resave: false,
+		saveUninitialized: false
+	})
+);
+
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 var journalSchema = new mongoose.Schema({
 	id: Number,
@@ -69,6 +87,37 @@ app.get('/:id/:title', function(req, res) {
 	});
 });
 
+app.get('/secret', function(req, res) {
+	res.render('secret');
+});
+
+app.get('/register', function(req, res) {
+	res.render('register');
+});
+
+app.post('/register', function(req, res) {
+	User.register(new User({ username: req.body.username }), req.body.password, function(err, user) {
+		if (err) {
+			console.log(err);
+			return res.render('register');
+		}
+		passport.authenticate('local')(req, res, function() {
+			res.redirect('/secret');
+		});
+	});
+});
+
+app.get('/login', function(req, res) {
+	res.render('login');
+});
+
+app.post(
+	'/login',
+	passport.authenticate('local', {
+		successRedirect: '/secret',
+		failureRedirect: '/login'
+	})
+);
 app.get('*', function(req, res) {
 	res.render('pageDoesNotExist');
 });
