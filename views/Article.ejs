@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs")%>
+
+<link rel="stylesheet" href="/article.css">
+
+<% data.forEach(function(articleData) { %>
+
+
+
+<div class="container" id="cntr">
+    <div class="col-lg-12">
+        <h1><%= articleData.title %></h1>
+        <img src="/resources/<%= articleData.image %>" alt="<%= articleData.alt %>">
+        <h3><%= articleData.subtitle %></h3>
+        <h2><span>By </span>Mihir Neal</h2>
+        <h4><%= articleData.dateAndTime %></h4>
+
+    
+        <div class="article">
+            <%- articleData.body %>
+        </div>
+    </div>
+    
+</div>
+
+<% }) %>
+
+<%- include("partials/footer.ejs")%>
+
+
+
+
+
+
+
+
