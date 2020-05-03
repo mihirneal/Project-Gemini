@@ -1,8 +1,40 @@
-<h1>Login</h1>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Admin Login Only</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="/login.css"> -->
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="jumbotron">
+                <h1>This is for Admin Login Only.</h1>
+                <p>If you're not Mihir, just go away.</p>
+            </div>
 
-<form action="/login" method="post">
-<input type="text" name="username" placeholder="username">
-<input type="password" name="password" id="" placeholder="password">
-<input type="submit">
+            <form action="/login" method="POST">
+                <div class="form-group">
+                  <label for="exampleInputUser">Username</label>
+                  <input type="text" class="form-control" id="exampleInputUser" placeholder="Username" name="username">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+        </div>
 
-</form>
+
+        
+
+    </body>
+</html>
