@@ -20,12 +20,14 @@
 }
 
 #cntr h3 {
+	width: 95%;
 	font-family: 'Lora', serif;
 	font-size: 1.25rem;
 	color: #a7a7a7;
 	font-weight: 400;
 	margin-top: 10px;
 	margin-left: 20px;
+	text-align: right;
 }
 
 #cntr h4 {
@@ -53,4 +55,21 @@
 #cntr h2 span {
 	color: #0080ff;
 	font-weight: 400;
+}
+
+#article h3 {
+	width: 80%;
+}
+
+#article img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+#article h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	font-size: 3.0rem;
 }
