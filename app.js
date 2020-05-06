@@ -60,7 +60,7 @@ app.get('/secret', function(req, res) {
 	res.render('secret');
 });
 
-app.post('/secret', function(req, res) {
+app.post('/MIIEpQIBAAKCAQEA0dkwzPRI3DS9WBnQCvVTvh3eeuCMbxc39cZMo2zzHNwYdNHzugDyXP2xX', function(req, res) {
 	var Id = req.body.id;
 	var Title = req.body.heading;
 	var Subtitle = req.body.subheading;
@@ -102,7 +102,7 @@ app.post('/register', function(req, res) {
 			return res.render('register');
 		}
 		passport.authenticate('local')(req, res, function() {
-			res.redirect('/secret');
+			res.redirect('/MIIEpQIBAAKCAQEA0dkwzPRI3DS9WBnQCvVTvh3eeuCMbxc39cZMo2zzHNwYdNHzugDyXP2xX');
 		});
 	});
 });
@@ -114,7 +114,7 @@ app.get('/login', function(req, res) {
 app.post(
 	'/login',
 	passport.authenticate('local', {
-		successRedirect: '/secret',
+		successRedirect: '/MIIEpQIBAAKCAQEA0dkwzPRI3DS9WBnQCvVTvh3eeuCMbxc39cZMo2zzHNwYdNHzugDyXP2xX',
 		failureRedirect: '/login'
 	})
 );
