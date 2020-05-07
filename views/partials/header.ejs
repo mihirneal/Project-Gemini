@@ -5,9 +5,21 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
+
+        <% data.forEach(function(articleData) { %>
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Journal</title>
         <meta name="description" content="">
+        <meta property="og:title" content="<%= articleData.title %>" />
+        <meta property="og:type" content="Article" />
+        <meta property='og:image' content="/resources/<%= articleData.image %>" />
+        <meta property="og:description" content="<%= articleData.subtitle %>" />
+        <% }) %>
+        <meta property="og:url" content="http://www.mihirneal.com/journal<%= ArticleUrl %>" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Mihir Neal" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Lora:wght@400;500&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -39,5 +51,4 @@
             </div>
 
             </div>
-
         </nav>

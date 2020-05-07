@@ -121,11 +121,16 @@ app.post(
 
 app.get('/:id/:title', function(req, res) {
 	var ArticleId = req.params.id;
+	var ArticleTitle = req.params.title;
+	var ArticleUrl = '/' + ArticleId + '/' + ArticleTitle;
 	Journal.find({ id: ArticleId }, function(err, data) {
 		if (err) {
 			console.log('Error has occured. ');
 		} else {
-			res.render('Article', { data: data });
+			res.render('Article', {
+				data: data,
+				ArticleUrl: ArticleUrl
+			});
 		}
 	});
 });
