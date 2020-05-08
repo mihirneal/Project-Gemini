@@ -139,6 +139,6 @@ app.get('*', function(req, res) {
 	res.render('pageDoesNotExist');
 });
 
-app.listen(80, function() {
+app.listen(443, function() {
 	console.log('Server Initiated');
 });
