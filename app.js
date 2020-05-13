@@ -56,40 +56,46 @@ app.get('/journal', function(req, res) {
 	res.render('journal');
 });
 
-app.get('/secret', function(req, res) {
-	res.render('secret');
-});
+app.get(
+	'/5367566B5970337336763979244226452948404D6351665468576D5A7134743777217A25432A462D4A614E645267556B586E3272357538782F413F4428472B4B',
+	function(req, res) {
+		res.render('secret');
+	}
+);
 
-app.post('/secret', function(req, res) {
-	var Id = req.body.id;
-	var Title = req.body.heading;
-	var Subtitle = req.body.subheading;
-	var dateAndTime = req.body.dateandtime;
-	var image = req.body.image;
-	var alt = req.body.alttext;
-	var body = req.body.body;
-	Journal.create(
-		{
-			id: Id,
-			title: Title,
-			subtitle: Subtitle,
-			dateAndTime: dateAndTime,
-			image: image,
-			alt: alt,
-			body: body
-		},
-		function(err, data) {
-			if (err) {
-				console.log('Error occured');
-				console.log(err);
-			} else {
-				console.log('Data sucessfully entered.');
+app.post(
+	'/5367566B5970337336763979244226452948404D6351665468576D5A7134743777217A25432A462D4A614E645267556B586E3272357538782F413F4428472B4B',
+	function(req, res) {
+		var Id = req.body.id;
+		var Title = req.body.heading;
+		var Subtitle = req.body.subheading;
+		var dateAndTime = req.body.dateandtime;
+		var image = req.body.image;
+		var alt = req.body.alttext;
+		var body = req.body.body;
+		Journal.create(
+			{
+				id: Id,
+				title: Title,
+				subtitle: Subtitle,
+				dateAndTime: dateAndTime,
+				image: image,
+				alt: alt,
+				body: body
+			},
+			function(err, data) {
+				if (err) {
+					console.log('Error occured');
+					console.log(err);
+				} else {
+					console.log('Data sucessfully entered.');
+				}
 			}
-		}
-	);
+		);
 
-	res.render('submit');
-});
+		res.render('submit');
+	}
+);
 
 app.get('/login', function(req, res) {
 	res.render('login');
@@ -98,7 +104,8 @@ app.get('/login', function(req, res) {
 app.post(
 	'/login',
 	passport.authenticate('local', {
-		successRedirect: '/secret',
+		successRedirect:
+			'/5367566B5970337336763979244226452948404D6351665468576D5A7134743777217A25432A462D4A614E645267556B586E3272357538782F413F4428472B4B',
 		failureRedirect: '/login'
 	})
 );
