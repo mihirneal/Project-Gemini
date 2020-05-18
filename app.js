@@ -110,7 +110,7 @@ app.post(
 	})
 );
 
-app.get('/:id/:title', function(req, res) {
+app.get('/journal/:id/:title', function(req, res) {
 	var ArticleId = req.params.id;
 	var ArticleTitle = req.params.title;
 	var ArticleUrl = '/' + ArticleId + '/' + ArticleTitle;
