@@ -9,7 +9,7 @@
         <% data.forEach(function(articleData) { %>
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Journal</title>
+        <title><%= articleData.subtitle %></title>
         <meta name="description" content="<%= articleData.subtitle %>">
         <meta property="og:title" content="<%= articleData.title %>">
         <meta property="og:type" content="Article">
@@ -19,9 +19,9 @@
         <meta name="twitter:title" content="<%= articleData.title %>">
         <meta property="og:description" content="<%= articleData.subtitle %>">
         <meta property="og:content" content="<%= articleData.subtitle %>">
-        <meta name="twitter:image" content="http://mihirneal.com/resources/<%= articleData.image %>">
-        <% }) %>
-        <meta property="og:url" content="http://www.mihirneal.com/journal<%= ArticleUrl %>">
+        <meta name="twitter:image" content="http://mihirneal.com/resources/<%= articleData.image %>"> 
+        <meta property="og:url" content="http://www.mihirneal.com/<%= ArticleUrl %>">
+        <% }) %> 
         <meta property="og:locale" content="en_US">
         <meta property="og:site_name" content="Mihir Neal">
         <meta name="twitter:card" content="summary_large_image">
@@ -58,4 +58,4 @@
             </div>
 
             </div>
-        </nav>
+        </nav>     

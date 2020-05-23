@@ -126,10 +126,6 @@ app.get('/journal/:id/:title', function(req, res) {
 	});
 });
 
-app.get('*', function(req, res) {
-	res.render('pageDoesNotExist');
-});
-
 app.listen(5000, function() {
 	console.log('Server Initiated');
 });
