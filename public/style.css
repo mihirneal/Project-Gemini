@@ -188,6 +188,25 @@ h2 {
 	width: 100%;
 	left: 0;
 }
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: transparent;
+	color: white;
+	text-align: center;
+}
+
+.twitter_icon {
+	margin-right: 50px;
+}
+
+.mail {
+	margin-left: 50px;
+}
+
 @media screen and (max-height: 300px) {
 	ul {
 		margin-top: 40px;

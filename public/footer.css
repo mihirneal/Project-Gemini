@@ -158,33 +158,20 @@ navbar-default .navbar-nav > li > a:focus,
 	margin-left: 16.5%;
 }
 
-.me a {
-	color: white;
-	margin: 0 auto;
-}
-
-.cred {
-	margin: 0 auto;
-	height: 50px;
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
 	width: 100%;
-	margin-bottom: 20px;
-}
-.cred h3 {
-	font-size: 120%;
-}
-
-#twitter {
-	width: 160px;
-	margin: 0;
-	float: left;
-	margin-top: 20px;
-	margin-left: 2.5%;
+	background-color: transparent;
+	color: white;
+	text-align: center;
 }
 
-#mail {
-	width: 200px;
-	margin: 0;
-	float: left;
-	margin-top: 20px;
-	margin-right: 2.5%;
+.twitter_icon {
+	margin-right: 50px;
+}
+
+.mail {
+	margin-left: 50px;
 }

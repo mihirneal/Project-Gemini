@@ -44,14 +44,6 @@ app.get('/', function(req, res) {
 	res.render('index');
 });
 
-app.get('/aboutMe', function(req, res) {
-	res.render('about');
-});
-
-app.get('/projects', function(req, res) {
-	res.render('projects');
-});
-
 app.get('/journal', function(req, res) {
 	res.render('journal');
 });
