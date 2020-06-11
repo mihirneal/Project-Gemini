@@ -159,12 +159,9 @@ navbar-default .navbar-nav > li > a:focus,
 }
 
 .footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
+	margin-top: 25px;
 	width: 100%;
 	background-color: transparent;
-	color: white;
 	text-align: center;
 }
 
